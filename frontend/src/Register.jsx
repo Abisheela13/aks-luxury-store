@@ -14,7 +14,7 @@ function Register() {
   e.preventDefault();
 
   const response = await fetch(
-    "http://localhost:5000/register",
+    "https://aks-backend-x4ic.onrender.com/register",
     {
 
       method:"POST",

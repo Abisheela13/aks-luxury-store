@@ -73,7 +73,7 @@ function Checkout({
       // Create Razorpay Order
       const response = await fetch(
 
-        "http://localhost:5000/create-order",
+        "https://aks-backend-x4ic.onrender.com/create-order",
 
         {
 
@@ -98,7 +98,7 @@ function Checkout({
       // Razorpay options
       const options = {
 
-        key:"rzp_test_SmkZ9rweUuXxq3",
+        key:"rzp_test_Smo3bLpR91JdPv",
 
         amount:order.amount,
 

@@ -30,7 +30,7 @@ const [rating, setRating] = useState(5);
   // Fetch products
   useEffect(() => {
 
-    fetch("http://localhost:5000/products")
+    fetch("https://aks-backend-x4ic.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
 
