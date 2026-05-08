@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const Razorpay = require("razorpay");
 
 const jwt = require("jsonwebtoken");
@@ -233,9 +235,7 @@ app.post("/create-order", async(req,res)=>{
 
 
 // MongoDB Connection
-mongoose.connect(
-  "mongodb+srv://abisheela77_db_user:abi123@cluster0.e1bhxhw.mongodb.net/clothingDB?retryWrites=true&w=majority"
-)
+mongoose.connect(process.env.MONGO_URL)
 .then(() => console.log("DB Connected"))
 .catch((err) => console.log(err));
 
